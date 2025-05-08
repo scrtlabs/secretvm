@@ -1,4 +1,4 @@
-# SecretVM: Confidential Virtual Machines
+# SecretVM: Confidential Virtual Machines 
 
 This is the umbrella repository for the SecretVM project, a comprehensive platform for building, operating, and securing confidential virtual machines (CVMs) using Trusted Execution Environment (TEE) technologies.
 
