@@ -4,14 +4,13 @@ This is the umbrella repository for the SecretVM project, a comprehensive platfo
 
 ## Project Components
 
-| Repository | Description | Primary Function |
-|------------|-------------|------------------|
-| [secret-vm-build](https://github.com/scrtlabs/secret-vm-build) | Yocto-based build system for creating secure VM images | Building the foundational secure VM images |
-| [secret-vm-ops](https://github.com/scrtlabs/secret-vm-ops) | Operational tools for VM management | Day-to-day operations of CVMs including startup and attestation |
-| [secret-vm-kms](https://github.com/scrtlabs/secret-vm-kms) | Key Management System for secure key distribution | Managing cryptographic keys through attestation |
-| [secret-vm-attest-rest-server](https://github.com/scrtlabs/secret-vm-attest-rest-server) | REST server for attestation reporting | Providing attestation services over HTTPS |
-| [reproduce-mr](https://github.com/scrtlabs/reproduce-mr) | A CLI tool for calculating attestation measurements for SecretVM images | Indepentendly verifying the authenticity of SecretVM machines | 
-
+| Repository | Description |
+|------------|-------------|
+| [secret-vm-build](https://github.com/scrtlabs/secret-vm-build) | Yocto-based reproducible build system for creating SecretVM artifacts|
+| [secret-vm-ops](https://github.com/scrtlabs/secret-vm-ops) | Operational tools for SecretVM runtime |
+| [secret-vm-kms](https://github.com/scrtlabs/secret-vm-kms) | On-chain Key Management System for secure key distribution |
+| [secret-vm-attest-rest-server](https://github.com/scrtlabs/secret-vm-attest-rest-server) | A web server runing inside the SecretVM, exposing attestation and logs |
+| [reproduce-mr](https://github.com/scrtlabs/reproduce-mr) | A CLI tool for calculating attestation measurements for SecretVM images |
 
 
 ## Component Details
