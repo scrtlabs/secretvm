@@ -10,6 +10,9 @@ This is the umbrella repository for the SecretVM project, a comprehensive platfo
 | [secret-vm-ops](https://github.com/scrtlabs/secret-vm-ops) | Operational tools for VM management | Day-to-day operations of CVMs including startup and attestation |
 | [secret-vm-kms](https://github.com/scrtlabs/secret-vm-kms) | Key Management System for secure key distribution | Managing cryptographic keys through attestation |
 | [secret-vm-attest-rest-server](https://github.com/scrtlabs/secret-vm-attest-rest-server) | REST server for attestation reporting | Providing attestation services over HTTPS |
+| [reproduce-mr](https://github.com/scrtlabs/reproduce-mr) | A CLI tool for calculating attestation measurements for SecretVM images | Indepentendly verifying the authenticity of SecretVM machines | 
+
+
 
 ## Component Details
 
@@ -61,4 +64,11 @@ A lightweight REST server that provides attestation reports for confidential VMs
 - **Secure Blockchain Operations**: Protection for sensitive blockchain operations
 - **Regulated Data Processing**: Compliant processing of sensitive data
 - **Multi-party Computation**: Secure collaboration on sensitive data
+
+### reproduce-mr
+A command-line tool that emulates the calculation of attesation registers (MRTD, RTMR0, RTMR1, RTMR2, RTMR3)
+
+**Key Features:**
+- Calculates the expected values of all attestation registers based on given VM artifacts, docker-compose.yaml and other parameters
+- Used to verify the chain of trust, ensuring that a given SecretVM is indeed built from given artifacts
 
