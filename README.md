@@ -36,12 +36,12 @@ This repository contains the operational tools required for running and managing
 ### secret-vm-kms
 
 The Key Management System provides a framework for secure cryptographic key management through attestation-based validation.
+The KMS is implemented as a Smart Contract running on Secret Network
 
 **Key Features:**
 - Service key management with attestation-based access control
 - Image-specific secret key distribution
 - Environment secret management
-- Cryptographic operations with ephemeral keys
 
 ### secret-vm-attest-rest-server
 
@@ -53,24 +53,12 @@ A lightweight REST server that provides attestation reports for confidential VMs
 - Visualization of attestation data
 - Docker integration for container monitoring
 
-## Getting Started
-
-Please refer to the individual component repositories for specific setup and usage instructions.
-
-For a complete SecretVM deployment, you'll typically need to:
-
-1. Build VM images using secret-vm-build
-2. Set up operational tools using secret-vm-ops
-3. Deploy the attestation server from secret-vm-attest-rest-server
-4. Configure key management using secret-vm-kms
-
 ## Use Cases
 
 - **Confidential AI**: Privacy-preserving machine learning workloads
+- **AI Agents**: Verifible AI agents
+- **MCP Servers**: Model-Context Protocol server, exposing additional capabilities to LLMs
 - **Secure Blockchain Operations**: Protection for sensitive blockchain operations
 - **Regulated Data Processing**: Compliant processing of sensitive data
 - **Multi-party Computation**: Secure collaboration on sensitive data
 
-## License
-
-All SecretVM components are licensed under the Apache License 2.0.
